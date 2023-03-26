@@ -1,5 +1,6 @@
 import Wallet from "./Wallet";
 import Transfer from "./Transfer";
+import Chain from "./Chain";
 import "./App.scss";
 import { useState } from "react";
 
@@ -16,6 +17,10 @@ function App() {
         setAddress={setAddress}
       />
       <Transfer setBalance={setBalance} address={address} />
+      <div className="container">
+        <Chain/>
+
+      </div>
     </div>
   );
 }
